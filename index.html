@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bodegón Ballarati - Las mejores pizzas y milanesas XXL de Lanús. Cena show los viernes. Delivery y salón.">
+    <title>Bodegón Ballarati | Pizzas y Milanesas XXL en Lanús</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header fijo -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-name">Bodegón Ballarati</span>
+                <span class="logo-tagline">Desde 1985</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#specialty">Especialidad</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="https://wa.me/5491127835437?text=Hola%20Bodegón%20Ballarati%2C%20quiero%20hacer%20un%20pedido" class="cta-header" target="_blank">Pedir por WhatsApp</a>
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#specialty">Especialidad</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="https://wa.me/5491127835437?text=Hola%20Bodegón%20Ballarati%2C%20quiero%20hacer%20un%20pedido" target="_blank">Pedir por WhatsApp</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Donde las porciones son grandes y los recuerdos, más aún.</h1>
+            <p class="hero-subtitle">Pizzas artesanales, milanesas XXL y cena show todos los viernes. Tu bodegón de confianza en Lanús Este.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver el menú</a>
+                <a href="https://wa.me/5491127835437?text=Hola%2C%20quiero%20reservar%20una%20mesa%20para%20la%20cena%20show" class="btn btn-secondary" target="_blank">Reservar para el viernes</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Pizza recién salida del horno" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Introducción / Diferenciales -->
+    <section id="differentials" class="differentials">
+        <div class="container">
+            <h2 class="section-title">Por qué somos diferentes</h2>
+            <div class="differentials-grid">
+                <div class="differential-item">
+                    <div class="differential-number">01</div>
+                    <h3>Masas fermentadas 48 horas</h3>
+                    <p>Nuestras pizzas no son las de siempre. Cada masa descansa dos días para desarrollar sabor, textura y esa crocancia que tanto gusta.</p>
+                </div>
+                <div class="differential-item">
+                    <div class="differential-number">02</div>
+                    <h3>Milanesas que desafían la lógica</h3>
+                    <p>Cortamos nuestro propio bife de nalga. Son tan grandes que apenas entran en el plato, y tan tiernas que se cortan con cuchara.</p>
+                </div>
+                <div class="differential-item">
+                    <div class="differential-number">03</div>
+                    <h3>Cena show todos los viernes</h3>
+                    <p>No venís solo a comer. Venís a pasarla bien. Los viernes transformamos el bodegón en una noche de música, risas y buenos momentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro menú</h2>
+            <p class="section-subtitle">Platos que hablan por sí solos. Elegí tu categoría y dejate tentar.</p>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="pizzas">Pizzas</button>
+                <button class="menu-tab" data-tab="milanesas">Milanesas</button>
+                <button class="menu-tab" data-tab="bebidas">Bebidas</button>
+                <button class="menu-tab" data-tab="postres">Postres</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Pizzas -->
+                <div class="menu-category active" id="pizzas">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Muzzarella clásica</h3>
+                            <span class="price">$3.800</span>
+                        </div>
+                        <p>Salsa de tomate casera, muzzarella de primera y orégano. La base de todo buen momento.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fugazzeta rellena</h3>
+                            <span class="price">$4.200</span>
+                        </div>
+                        <p>Cebolla caramelizada en abundancia y muzzarella que se estira en cada porción.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Napolitana</h3>
+                            <span class="price">$4.500</span>
+                        </div>
+                        <p>Tomate fresco, ajo, muzzarella y albahaca. Un viaje a Nápoles sin salir de Lanús.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Calabresa</h3>
+                            <span class="price">$4.300</span>
+                        </div>
+                        <p>Longaniza criolla, muzzarella y morrones. Para los que les gusta con algo de character.</p>
+                    </div>
+                    <div class="menu-item hidden">
+                        <div class="menu-item-header">
+                            <h3>Especial de la casa</h3>
+                            <span class="price">$5.100</span>
+                        </div>
+                        <p>Jamón cocido, champiñones, morrones y muzzarella. La que pedimos todos los domingos.</p>
+                    </div>
+                    <button class="show-more-btn" data-target="pizzas">Ver más pizzas</button>
+                </div>
+
+                <!-- Milanesas -->
+                <div class="menu-category" id="milanesas">
+                    <div class="menu-item featured">
+                        <div class="menu-item-header">
+                            <h3>Milanesa Napolitana XXL</h3>
+                            <span class="price">$5.800</span>
+                            <span class="badge">La estrella</span>
+                        </div>
+                        <p>Nuestra bandera. Bife de nalga gigante, empanizado artesanal, con salsa de tomate, muzzarella y albahaca. Se comes la mitad y guardas la otra para después.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Milanesa a caballo</h3>
+                            <span class="price">$5.200</span>
+                        </div>
+                        <p>Con huevo frito en su punto justo. Simple, contundente, perfecta.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Milanesa con fritas</h3>
+                            <span class="price">$4.900</span>
+                        </div>
+                        <p>La clásica que nunca falla. Con papas fritas caseras bien doradas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Milanesa completa</h3>
+                            <span class="price">$6.300</span>
+                        </div>
+                        <p>Con huevo frito, jamón y queso gratinado. Para los que no quieren elegir.</p>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-category" id="bebidas">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cerveza artesanal</h3>
+                            <span class="price">$1.800</span>
+                        </div>
+                        <p>Rotación de bollerías locales. Preguntá qué tenemos hoy.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Vino de la casa</h3>
+                            <span class="price">$2.200</span>
+                        </div>
+                        <p>Malbec o Torrontés, como te guste. Botella o copa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Agua saborizada</h3>
+                            <span class="price">$900</span>
+                        </div>
+                        <p>Limón, naranja o pomelo. Hecha en casa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Limonada natural</h3>
+                            <span class="price">$1.100</span>
+                        </div>
+                        <p>Con menta fresca y hielo. Refrescante de verdad.</p>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="menu-category" id="postres">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tiramisú de la nona</h3>
+                            <span class="price">$2.500</span>
+                        </div>
+                        <p>Receta de la abuela Ballarati. Sin atajos, sin prisa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Helado artesanal</h3>
+                            <span class="price">$1.800</span>
+                        </div>
+                        <p>Dos bochas de cremoso. Chocolate,DDL o vainilla.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Fainá con queso</h3>
+                            <span class="price">$1.500</span>
+                        </div>
+                        <p>Para los que saben que el fainá no es solo accompanante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                <p>¿No encontrás lo que buscás? Pedilo por WhatsApp</p>
+                <a href="https://wa.me/5491127835437?text=Hola%2C%20quiero%20hacer%20un%20pedido%20especial" class="btn btn-primary" target="_blank">Hacé tu pedido</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo trabajamos -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2 class="section-title">Cómo trabajamos</h2>
+            <p class="section-subtitle">Detrás de cada plato hay una historia de dedicación.</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Ingredientes que eligen</h3>
+                    <p>Cada mañana recorremos mercados y proveedores de confianza. No compramos por precio, compramos por calidad. Si el tomate no está en su punto, hoy no hay salsa.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Preparación artesanal</h3>
+                    <p>Nuestras masas fermentan 48 horas. Las milanesas se empanizan a mano, una por una. No hay atajos, ni hay prisa. El sabor se nota.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Servicio de barrio</h3>
+                    <p>Te atendemos como si fueras de la familia. Porque para nosotros, lo sos. Si venís una vez, ya sos parte del Ballarati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto estrella -->
+    <section id="specialty" class="specialty-section">
+        <div class="container">
+            <div class="specialty-content">
+                <div class="specialty-text">
+                    <span class="specialty-tag">La estrella de la casa</span>
+                    <h2 class="specialty-title">Milanesa Napolitana XXL</h2>
+                    <p class="specialty-description">No es una milanesa. Es una experiencia. Bife de nalga cortado a mano, empanizado con pan rallado casero, dorado en punto justo, cubierto con salsa de tomate que cocinamos toda la mañana, muzzarella que se estira en hilos infinitos y albahaca fresca que le da ese toque final.</p>
+                    <p class="specialty-detail">Es tan grande que te recomendamos venir con hambre de verdad. O con alguien que la comparta. Porque solos, es difícil terminarla.</p>
+                    <div class="specialty-price">
+                        <span class="price-label">Precio</span>
+                        <span class="price-value">$5.800</span>
+                    </div>
+                    <a href="https://wa.me/5491127835437?text=Hola%2C%20quiero%20pedir%20una%20Milanesa%20Napolitana%20XXL" class="btn btn-primary" target="_blank">Pedila ahora</a>
+                </div>
+                <div class="specialty-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milanesa Napolitana XXL" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">El Ballarati en imágenes</h2>
+            <p class="section-subtitle">Momentos que merecen ser recordados.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizzas recién horneadas" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ambiente del bodegón" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Milanesa preparándose" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mesa servida" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barra de tragos" loading="lazy">
+                </div>
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plato completo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros comensales</h2>
+            <div class="rating-summary">
+                <span class="rating-number">4.7</span>
+                <div class="rating-stars">★★★★★</div>
+                <span class="rating-count">Basado en 22 reseñas de Google</span>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-avatar">M</div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>María G.</h4>
+                            <span class="testimonial-date">hace 2 semanas</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Lo mejor que comí en Lanús. Las pizzas un 10 y las milanesas súper tiernas y ricas, además de enormes."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-avatar">L</div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>Lucas M.</h4>
+                            <span class="testimonial-date">hace 1 mes</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Excelente la Mila napolitana con fritas y a caballo 🙌🏻. Volveré el viernes para la cena show."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-avatar">C</div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>Carolina R.</h4>
+                            <span class="testimonial-date">hace 3 semanas</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Las mejores pizzas y milanesas XXL de Lanús. Tenés delivery o podés ir a comer al salón. Lo mejor: los viernes hacen cena show."</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-avatar">A</div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <h4>Ana P.</h4>
+                            <span class="testimonial-date">hace 1 semana</span>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Fui ayer con amigas! Comimos muy rico 😋, la pasamos re lindo, el show, la atención, todo. Lo recomiendo, vamos a volver."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momentos de uso -->
+    <section id="moments" class="moments-section">
+        <div class="container">
+            <h2 class="section-title">Momentos para disfrutar</h2>
+            <p class="section-subtitle">Siempre hay una razón para venir al Ballarati.</p>
+            
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Almuerzo de weekday" loading="lazy">
+                    </div>
+                    <div class="moment-content">
+                        <h3>El almuerzo rápido</h3>
+                        <p>Lunes a viernes de 12 a 15 hs. Para los que necesitan recargar energías sin perder tiempo. Menú del día, atención ágil y precios que no te rompen el bolsillo.</p>
+                        <span class="moment-time">12:00 - 15:00</span>
+                    </div>
+                </div>
+                
+                <div class="moment-card">
+                    <div class="moment-image">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cena con amigos" loading="lazy">
+                    </div>
+                    <div class="moment-content">
+                        <h3>La cena con amigos</h3>
+                        <p>Miércoles a domingo de 20 a 23:30 hs. Reservá mesa, pedí una picada grande, abrí una botella de vino y dejate llevar. Las conversaciones más buenas pasan acá.</p>
+                        <span class="moment-time">20:00 - 23:30</span>
+                    </div>
+                </div>
+                
+                <div class="moment-card">
+                    <div class="moment-image">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cena show viernes" loading="lazy">
+                    </div>
+                    <div class="moment-content">
+                        <h3>La previa del viernes</h3>
+                        <p>Todos los viernes desde 21 hs. Cena show en vivo. Música, risas y el mejor ambiente de Lanús. No hace falta reservar, pero te conviene.</p>
+                        <span class="moment-time">Viernes 21:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia y equipo -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Nuestra historia</h2>
+                    <p>Bodegón Ballarati nació en 1985 de las manos de Don Carlos Ballarati, un italiano que llegó a Lanús con una receta de pizza en el bolsillo y un sueño en la cabeza. Empezó con una pizzería de barrio, de esas donde todos se conocen y el dueño te saluda por nombre.</p>
+                    <p>Con el tiempo, las milanesas se pusieron tan de moda como las pizzas. Las porciones crecieron, el salón se llenó, y los viernes se convirtieron en la noche que todo Lanús espera. Hoy, tercera generación, seguimos fiels a la filosofía original: hacer las cosas bien, sin vueltas, y tratar a cada cliente como parte de la familia.</p>
+                    
+                    <div class="team">
+                        <h3>El equipo detrás del mostrador</h3>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <div class="member-avatar">C</div>
+                                <div class="member-info">
+                                    <h4>Carlos Ballarati Jr.</h4>
+                                    <p>Segunda generación, dueño y pizzero mayor. Sigue revisando cada masa que sale del horno.</p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar">M</div>
+                                <div class="member-info">
+                                    <h4> Martín Sosa</h4>
+                                    <p>Maestro pizzero desde 2005. Conoce los secretos de la fermentación lenta.</p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar">J</div>
+                                <div class="member-info">
+                                    <h4>Julieta López</h4>
+                                    <p>Encargada de sala. Te hace sentir en casa desde que entrás hasta que te vas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="El equipo de Bodegón Ballarati" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto/reserva -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Reservá tu mesa</h2>
+                    <p class="contact-description">¿Querés venir a cenar? ¿Necesitás una mesa para la cena show? ¿Tenés una celebración especial? Completá el formulario y te confirmamos por WhatsApp.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Dirección</span>
+                            <span class="contact-value">Margarita Weild 2552, Lanús Este</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">WhatsApp</span>
+                            <a href="tel:+5491127835437" class="contact-value">011 2783-5437</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Horarios</span>
+                            <span class="contact-value">Mar a Dom: 12-15 y 20-23:30</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Fecha</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Hora</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Seleccionar</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Cantidad de personas</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Seleccionar</option>
+                                <option value="1-2">1-2 personas</option>
+                                <option value="3-4">3-4 personas</option>
+                                <option value="5-6">5-6 personas</option>
+                                <option value="7-8">7-8 personas</option>
+                                <option value="9+">9+ personas (consultar)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion">Ocasión (opcional)</label>
+                            <input type="text" id="occasion" name="occasion" placeholder="Cumpleaños, aniversario, etc.">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Confirmar por WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>Bodegón Ballarati</h3>
+                        <p>Pizzas artesanales y milanesas XXL desde 1985. Tu bodegón de confianza en Lanús Este.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="#menu">Menú</a></li>
+                            <li><a href="#specialty">Especialidad</a></li>
+                            <li><a href="#about">Nosotros</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contacto</h4>
+                        <p>Margarita Weild 2552<br>Lanús Este, Buenos Aires</p>
+                        <a href="tel:+5491127835437">011 2783-5437</a>
+                        <div class="footer-social">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Margarita+Weild+2552+Lanús+Este+Buenos+Aires&output=embed"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bodegón Ballarati. Todos los derechos reservados.</p>
+                <p class="footer-credit">Diseñado por <a href="https://tuweben3dias.com" target="_blank">tuweben3dias.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5491127835437?text=Hola%20Bodegón%20Ballarati%2C%20tengo%20una%20consulta" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
